@@ -6,15 +6,18 @@ body {
     
     font-family: Verdana;
     text-align: center;
+    
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
 form {
+    font-family: sans-serif;
     background-color: #fff;
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 30px 20px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 /* Styling form-control Class */
@@ -54,7 +57,7 @@ button and Checkbox */
 button {
     background-color: #b3b0cc;
     border: 1px solid #777;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: inherit;
     font-size: 21px;
     display: block;
