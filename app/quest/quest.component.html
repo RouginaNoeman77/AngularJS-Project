@@ -1,0 +1,49 @@
+<form [formGroup]="reactiveForm" id="form" (ngSubmit)="onSubmit()">
+    <!-- Details -->
+    <div class="form-control">
+        <label for="Type">What type of property you are looking for?</label>
+        <!-- Dropdown options -->
+        <select name="Type" id="Type" formControlName="Type">
+            <option value="Villa">Villa</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Camp">Camp</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="Region">Which specific region are you looking for in renting your vacation property?</label>
+        <!-- Dropdown options -->
+        <select name="work" id="work" formControlName="Region">
+            <option value="Coastal">Coastal</option>
+            <option value="Tropical">Tropical</option>
+            <option value="Island">Island</option>
+            <option value="Mediterranean">Mediterranean</option>
+            <option value="Secluded">Secluded</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="Area">What particular area are you interested in for your vacation rental</label>
+        <!-- Dropdown options -->
+        <select name="Area" id="Area" formControlName="Area">
+            <option value="Beach Front">Beach Front</option>
+            <option value="Beach Side">Beach Side</option>
+            <option value="SeaSide">Sea Side</option>
+            <option value="Coastline">Coastline</option>
+            <option value="RemoteBeach">Remote Beach</option>
+        </select>
+    </div>
+   
+    
+    <div class="form-control">
+        <label for="Capacity">How many people will be joining you on your vacation??</label>
+        <!-- Counter with text box and buttons -->
+        <div>
+            <input type="number" name="Capacity" id="Capacity" min="0" formControlName="Capacity">
+        </div>
+    </div>
+
+   
+
+    <!-- Multi-line Text Input Control -->
+    <button type="GetProperty" value="GetProperty">Get Property</button>
+</form>
