@@ -38,7 +38,7 @@ select, textarea */
 .form-control select,
 .form-control textarea {
     border: 1px solid #777;
-    border-radius: 2px;
+    border-radius: 10px;
     font-family: inherit;
     padding: 10px;
     display: block;
@@ -51,6 +51,7 @@ button and Checkbox */
 .form-control input[type="checkbox"] {
     display: inline-block;
     width: auto;
+    border-radius: 10px;
 }
 
 /* Styling Button */
