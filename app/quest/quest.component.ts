@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { ApiService } from '../api.service';
+import { DialogService } from '../Services/dialog.service';
 
 
 @Component({
@@ -12,8 +13,7 @@ export class QuestComponent implements OnInit {
   title = 'Quest';
   reactiveForm: FormGroup;
 
-  constructor(private apiService: ApiService) {}
-
+  constructor(private apiService: ApiService, public popupservice:DialogService) {}
   ngOnInit(): void {
     this.reactiveForm = new FormGroup({
         Type: new FormControl('House'),

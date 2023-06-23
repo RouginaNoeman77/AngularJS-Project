@@ -21,7 +21,3 @@ getProperty(Type: string, Area: string, Region: string, Capacity: number) {
 
   return this.http.get(url, { params });
 }}
-/*getProperty(propertyDetails: any) {
-  const url = `${this.apiUrl}/Property/FilterProperty`;
-  return this.http.get(url, { params: propertyDetails });
-}*/

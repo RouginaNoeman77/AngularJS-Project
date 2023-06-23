@@ -1,1 +1,4 @@
-<app-quest></app-quest>
+<app-quest *ngIf="popupservice.showDialog"></app-quest>
+
+
+<button (click)="popupservice.showDialog=true"> Show Questionnaire </button>

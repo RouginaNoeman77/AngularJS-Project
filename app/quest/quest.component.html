@@ -1,3 +1,5 @@
+<div id="container">
+
 <form [formGroup]="reactiveForm" id="form" (ngSubmit)="onSubmit()">
     <!-- Details -->
     <div class="form-control">
@@ -27,10 +29,10 @@
         <select name="Area" id="Area" formControlName="Area">
             <option value="Beach Front">Beach Front</option>
             <option value="Beach Side">Beach Side</option>
-            <option value="SeaSide">Sea Side!!</option>
+            <option value="SeaSide">Sea Side</option>
             <option value="Coastline">Coastline</option>
             <option value="RemoteBeach">Remote Beach</option>
-            <option value="testing" >testing</option>
+          
         </select>
     </div>
    
@@ -47,4 +49,6 @@
 
     <!-- Multi-line Text Input Control -->
     <button type="GetProperty" value="GetProperty">Get Property</button>
+    <button type="cancel" value="cancel" (click)="popupservice.showDialog=false">Cancel</button>
 </form>
+</div> 
